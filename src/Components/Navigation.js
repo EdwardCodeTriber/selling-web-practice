@@ -4,13 +4,7 @@ const Navigation = () => {
   return (
     <div className='Container'>
 
-       {/* <nav> navbar</nav>
-       <main>main</main>
-       <div className='sidebar'>sidebar</div>
-       <div className='content1'>Content1</div>
-       <div className='content2'>Content2</div>
-       <div className='content3'>Content3</div>
-       <footer>Footer</footer> */}
+      
        <nav className='nav-'>
         <div className='logo-circle'></div>
         <div className='shapes'>
