@@ -157,7 +157,7 @@ right{
   border-radius: 5px;
   background-color: chocolate;
 }
-@media only screen and (max-width:950px) {
+@media only screen and (max-width:931px) {
    .main2{
     display: grid;
     grid-template-rows: 2fr 0.2fr 0.2fr 0.2fr 0.2fr;
