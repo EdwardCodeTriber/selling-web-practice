@@ -362,9 +362,7 @@ right{
     "circle"
     "rectangle";
    }
-   .circle{
-    
-   }
+   
    .bars{
     display: grid;
     grid-template-rows: 1fr 1fr;
