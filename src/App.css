@@ -1,38 +1,376 @@
-.App {
+/* .Navbar{
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: red;
+margin: 10px;
+ 
+}
+
+.first-c{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(13, 158, 33);
+}
+.second-r{
+  height:50px;
+  width: 75px;
+  border-radius: 10px 10px 10px 10px;
+  background-color: blue;
+}
+.third-s{
+  background-color: whitesmoke;
+  height: 50px;
+  width: 50px;
+}
+.fourth-r{
+  height:50px;
+  width: 75px;
+  border-radius: 10px 10px 10px 10px;
+  background-color: blue;
+}
+.fifth-c {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(13, 158, 33);
+}
+
+.main-rec{
+  height: 100px;
+  margin: 10px;
+  background-color: rgb(143, 72, 72);
+}
+.colum-row{
+  display: grid;
+  height: 200px;
+  margin: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 35px 35px 35px 35px;
+  grid-template-areas: 
+  "side-square right-rec1"
+  "side-square right-rec2"
+  "side-square right-rec3"
+  "side-square right-rec4"
+  ;
+  gap: 20px;
+}
+
+.side-square{
+  height: 200px;
+  background-color: green;
+}
+.right-rec1{
+  background-color: blueviolet;
+}
+.right-rec2{
+  background-color: aqua;
+}
+.right-rec3{
+  background-color: brown;
+}
+.right-rec4{
+  background-color: chartreuse;
+}
+.rec-bar{
+  margin: 10px;
+  background-color: aqua;
+  height: 50px;
+}
+.with-c{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-rows: 1fr;
+  margin: 10px;
+  gap: 85px;
+}
+.rec-left{
+  background-color: blue;
+  height: 80px;
+  width: 200px;
+}
+.mid-circle{
+  background-color: peru;
+  border-radius: 50%;
+  height: 80px;
+  width: 85px;
+}
+.rec-right{
+  background-color: blue;
+  height: 80px;
+  width: 200px;
+}
+.footer{
+  margin: 10px;
+  background-color: aqua;
+  height: 95px;
+} */
+/* .Container{
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 1.5fr 1.2fr 1.2fr 0.8fr;
+  grid-template-areas: 
+  "nav nav nav nav"
+  "sidebar main main main"
+  "sidebar content1 content2 content3"
+  "sidebar footer footer footer";
+  gap: 0.2rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-transform: capitalize;
+  font-size: 22px;
+  color: rgb(45, 49, 33);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav{
+  background-color: aqua;
+  grid-area: nav;
+  padding: 5px;
+  margin: 5px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+main{
+  background-color: aquamarine;
+  grid-area: main;
+  padding: 5px;
+  margin: 5px;
+}
+.sidebar{
+  background-color: rgb(89, 144, 189);
+  grid-area: sidebar;
+  padding: 5px;
+  margin: 5px;
+}
+.content1{
+  background-color: rgb(25, 173, 124);
+  grid-area: content1;
+  padding: 5px;
+  margin: 5px;
+}
+.content2{
+  background-color: rgb(83, 172, 172);
+  grid-area: content2;
+  padding: 5px;
+  margin: 5px;
+}
+.content3{
+  background-color: rgb(146, 240, 103);
+  grid-area: content3;
+  padding: 5px;
+  margin: 5px;
+}
+footer{
+  background-color: gray;
+  grid-area: footer;
+  padding: 5px;
+  margin: 5px;
+}
+@media only screen and (max-width:950px) {
+  .Container{
+    grid-template-columns: 1fr;
+    grid-template-rows: 
+    0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+    grid-template-areas: 
+    "nav"
+    "sidebar"
+    "main"
+    "content1"
+    "content2"
+    "content3"
+    "footer"
+    ;
   }
+} */
+.Container{
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0.3rem;
+  flex-wrap: wrap;
+}
+.nav-{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 2px solid black;
+    background-color: aqua;
+    margin: 8px;
+}
+.logo-circle{
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: wheat;
+}
+.shapes{
+    display: flex;
+    justify-content:center;
+    align-items: end;
+    gap : 1em;
+}
+.rec1{
+  border: 2px solid black;
+  width: 70px;
+  height: 50px;
+  background-color: rgb(190, 144, 57);
+}
+.squr1{
+  border: 2px solid black;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(121, 93, 42);
+}
+.rec2{
+  border: 2px solid black;
+  width: 70px;
+  height: 50px;
+  background-color: rgb(194, 111, 55);
+}
+.circle{
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(83, 226, 64);
+}
+main1{
+  border: 2px solid black;
+  background-color: rgb(27, 177, 127);
+  text-align: center;
+  margin: 8px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  "sideS content1"
+  "sideS content2"
+  "sideS content3"
+  "sideS content4";
+  gap: 0.7rem;
+  margin: 8px;
+}
+.sideS{
+  border: 2px solid black;
+  background-color: rgb(165, 115, 115);
+  grid-area: sideS;
+  text-align: center;
+  border-radius: 5px;
+}
+.content1{
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: rgb(241, 58, 58);
+  grid-area: content1;
+  text-align: center;
+}
+.content2{
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: rgb(221, 96, 96);
+  grid-area: content2;
+  text-align: center;
+}
+.content3{
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: rgb(146, 11, 11);
+  grid-area: content3;
+  text-align: center;
+}
+.content4{
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: rgb(124, 39, 39);
+  grid-area: content4;
+  text-align: center;
+}
+
+
+
+reac{
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: rgb(18, 230, 159);
+  text-align: center;
+  margin: 8px;
+}
+.Items{
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr; */
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  text-align: center;
+  margin: 8px;
+  
 }
-
-.App-link {
-  color: #61dafb;
+rec{
+  border: 2px solid black;
+  width: 400px;
+  height: auto;
+  background-color: rgb(194, 111, 55);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+circle{
+ border: 2px solid black;
+ width: 100px;
+ height: auto;
+ border-radius: 50%;
+}
+rectangle{
+  border: 2px solid black;
+  width: 400px;
+  height: auto;
+  background-color: rgb(194, 111, 55);
+}
+.bars{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "left right";
+  text-align: center;
+}
+left{
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: coral;
+}
+right{
+  border: 2px solid red;
+  border-radius: 5px;
+  background-color: chocolate;
+}
+@media only screen and (max-width:950px) {
+   .main2{
+    display: grid;
+    grid-template-rows: 2fr 0.2fr 0.2fr 0.2fr 0.2fr;
+    grid-template-areas: 
+    "sideS"
+    "content1"
+    "content2"
+    "content3"
+    "content4";
+   }
+   .Items{
+    display: grid;
+    grid-template-rows: 2fr 2fr 2fr;
+    grid-template-areas:
+    "rec"
+    "circle"
+    "rectangle";
+   }
+   .circle{
+    
+   }
+   .bars{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "left" 
+    "right";
+   }
+  
 }
